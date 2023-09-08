@@ -16,15 +16,15 @@ function App() {
 
       <Hero />
 
-      <Benefits/>
+      <Benefits />
 
-      <OurExperts/>
+      <OurExperts />
 
-      <Testimonials/>
+      <Testimonials />
 
-      <BottomCTA/>
+      <BottomCTA />
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

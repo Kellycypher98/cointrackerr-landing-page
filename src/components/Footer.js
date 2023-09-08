@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Element } from "react-scroll";
 function Footer() {
   return (
     <div className="mt-24 pt-12 pb-8">
@@ -11,13 +11,38 @@ function Footer() {
           </a>
 
           <div className="mt-4 flex justify-around">
-            <img className="icon-button" src="./images/x-twitter.svg" alt="" />
-            <img className="icon-button" src="./images/linkedin.svg" alt="" />
-            <img
-              className="icon-button"
-              src="./images/github-svgrepo-com.svg"
-              alt=""
-            />
+            <a
+              href="https://twitter.com/_kellyboateng"
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img
+                className="icon-button"
+                src="./images/x-twitter.svg"
+                alt=""
+              />{" "}
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/kelvin-boateng-945239198/"
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              <img className="icon-button" src="./images/linkedin.svg" alt="" />{" "}
+            </a>
+
+            <a
+              href="https://github.com/Kellycypher98/CoinTrackerr.git"
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              <img
+                className="icon-button"
+                src="./images/github-svgrepo-com.svg"
+                alt=""
+              />
+            </a>
           </div>
         </div>
 
@@ -38,7 +63,11 @@ function Footer() {
         </div>
 
         <div className="lg:col-span-2">
-          <h6 className="font-medium text-xl">Get to know first</h6>
+          <Element name="footer">
+            {" "}
+            <h6 className="font-medium text-xl">Get to know first</h6>
+          </Element>
+
           <div className="mt-9 border border-[#BCD0E5] rounded-md text-left">
             <input
               className="w-full p-2 bg-transparent outline-none"

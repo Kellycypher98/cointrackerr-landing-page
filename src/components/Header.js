@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import { MenuIcon } from "@heroicons/react/solid";
-
+import { Link as ScrollLink } from "react-scroll";
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const toggleMobileMenu = () => {
@@ -29,7 +29,7 @@ function Header() {
           <div className="bg-white p-4 h-full relative">
             {/* Close Button */}
             <button
-              className="text-gray-500 hover:text-gray-700 absolute bottom-0 left-10 border px-5  rounded-full font-bold bg-black "
+              className="text-gray-500 hover:text-gray-700 absolute bottom-0 left-10 border px-5 item-center rounded-full font-bold bg-black "
               onClick={closeMobileMenu}
             >
               close
@@ -37,27 +37,75 @@ function Header() {
             {/* Mobile menu items */}
 
             <div className="flex flex-col text-center space-y-2 ">
-              <a href="h.com" className="nav-item">
+              <ScrollLink
+                to="features-section"
+                smooth={true}
+                duration={500}
+                className="nav-item"
+              >
                 Features
-              </a>
-              <a href="h.com" className="nav-item">
+              </ScrollLink>
+              <ScrollLink
+                to="get-started"
+                smooth={true}
+                duration={500}
+                className="nav-item"
+              >
                 Get started
-              </a>
-              <a href="h.com" className="nav-item">
+              </ScrollLink>
+              <ScrollLink
+                to="testimonial"
+                smooth={true}
+                duration={500}
+                className="nav-item"
+              >
                 Testimonial
-              </a>
-              <a href="h.com" className="nav-item">
+              </ScrollLink>
+              <ScrollLink
+                to="footer"
+                smooth={true}
+                duration={500}
+                className="nav-item"
+              >
                 Subscribe
-              </a>
+              </ScrollLink>
             </div>
           </div>
         </div>
 
         <div className="hidden lg:flex items-center space-x-3 lg:space-x-8">
-          <p className="nav-item">Features</p>
-          <p className="nav-item">Get started</p>
-          <p className="nav-item">Testimonial</p>
-          <p className="nav-item">Subscribe</p>
+          <ScrollLink
+            to="features-section"
+            smooth={true}
+            duration={500}
+            className="nav-item"
+          >
+            Features
+          </ScrollLink>
+          <ScrollLink
+            to="get-started"
+            smooth={true}
+            duration={500}
+            className="nav-item"
+          >
+            Get started
+          </ScrollLink>
+          <ScrollLink
+            to="testimonial"
+            smooth={true}
+            duration={500}
+            className="nav-item"
+          >
+            Testimonial
+          </ScrollLink>
+          <ScrollLink
+            to="footer"
+            smooth={true}
+            duration={500}
+            className="nav-item"
+          >
+            Subscribe
+          </ScrollLink>
         </div>
       </div>
     </header>
