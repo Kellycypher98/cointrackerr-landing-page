@@ -32,18 +32,19 @@ function Benefits() {
       <BenefitItem
         image="./images/Transaction.jpg"
         heading2="Transaction"
-        description="Discover a new way to manage your finances with our cutting-edge dashboard. Take control of your money, set financial goals, and track your progress all in one place. Our intuitive design makes it easy for you to stay on top of your finances."
+        description="Managing your money has never been easier. Whether you're making payments, receiving income, or just keeping tabs on your financial activity, this is where it all comes together."
         Content={() => (
           <div>
-            <h5 className="mt-6 mb-2 font-semibold">Real-Time Updates</h5>
-            <p>
-              See your transactions and account balances in real-time. No more
-              waiting for monthly statements.
-            </p>
             <h5 className="mt-6 mb-2 font-semibold">Transaction History</h5>
             <p>
-              Access your complete transaction history with just a few clicks.
-              Stay organized and never miss a payment..
+              Your financial life, all in one place. View a comprehensive
+              history of your transactions, from purchases and bills to income
+              deposits.
+            </p>
+            <h5 className="mt-6 mb-2 font-semibold">Search and Filters</h5>
+            <p>
+              Find any transaction in seconds with our powerful search and
+              filter options. No more digging through receipts or statements.
             </p>
           </div>
         )}
